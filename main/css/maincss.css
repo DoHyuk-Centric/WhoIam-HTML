@@ -1,0 +1,45 @@
+@import "./main-header.css";
+@import "./main-loginBtn.css";
+@import "./main-scroll.css";
+@import "./main-footer.css";
+@import "./main-continer-text";
+
+html{
+    background-color: rgb(24, 24, 24);
+    scroll-behavior:smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    color: white;
+}
+
+
+/*태블릿*/
+@media screen and (min-width: 769px) and (max-width: 1024px) { 
+    .main-container{
+        /*background-color: blue;*/
+    }
+}
+
+/*모바일*/
+@media screen and (max-width: 768px) {
+    .main-container{
+        /*background-color: red;*/
+    }
+}
+
+/*데탑*/
+@media screen and (min-width: 1025px){
+    .main-container{
+       /* background-color: blueviolet;*/
+    }
+}

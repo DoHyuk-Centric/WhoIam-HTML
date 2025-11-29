@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/logincss.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>회원가입</h1>
+        <form>
+            <div class="register_area">
+                <div class="register email text">
+                    계정 이메일
+                </div>
+
+                <div class="login-input-text">
+                    <input type="text" name="id" id="id" placeholder="이메일을 입력하세요">
+                    <input type="text" name="id_chk" id="id_chk" placeholder="이 자리엔 중복/아이디 형태 확인 자리">
+                    <button type="button" class="btn_register_chk1">중복체크</button>
+                </div>
+            </div>
+
+            <div class="register_area">
+                <div class="register password text">
+                    비밀번호
+                </div>
+
+                <div class="login-input-text">
+                    <input type="password" name="pw" id="pw" placeholder="비밀번호를 입력해주세요">
+                    <p class="pw2_area"><input type="password" name="pw2_chk" id="pw2_chk" placeholder="비밀번호 재입력"></p>
+                </div>
+            </div>
+            <div class="register_area">
+                <div class="register nickname text">
+                    닉네임
+                </div>
+
+                <div class="login-input-text">
+                    <input type="text" name="nick" placeholder="닉네임을 입력하세요">
+                </div>
+            </div>
+            
+            <div class="register_area">
+                <div class="register tel text">
+                    전화번호
+                </div>
+
+                <div class="login-input-text">
+                    <input type="tel" name="tel" placeholder="전화번호 입력하세요">
+                </div>
+            </div>
+
+            <label class="register_btn_area">
+                <button onclick="location.href='login.html'" type="button" class="btn_register_chk">이전</button>
+                <button type="button" class="btn_register_chk">다음</button>
+            </label>
+        </form>
+    </div>
+</body>
+</html>

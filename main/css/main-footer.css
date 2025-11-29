@@ -1,0 +1,47 @@
+/******footer******/
+.main-footer{
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    /*margin-top: 280px;
+    padding-top: 20px;*/
+}
+
+.footer-LogoContainer img{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-BlogLogo{
+    width: 60px;
+    right: 5px;
+    bottom: 0px;
+}
+
+.footer-GithubLogo{
+    width: 46px;
+    right: 60px;
+    bottom: 0px;
+}
+
+.footer-text{
+    color: gray;
+    font-size: 13px;
+}
+
+.footer-on-text{
+    margin-top: 220px;
+    margin-right: 200px;
+    margin-bottom: 280px;
+    color: aqua;
+    font-size: 30px;
+    bottom: 20px;
+
+}

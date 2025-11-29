@@ -1,0 +1,45 @@
+.main-header{
+    position:sticky;
+    top: 0;
+    background-color: rgba(24,24,24);
+    border-radius: 0px 0px 50px 50px;
+    z-index: 999;     /* 다른 요소 위로 */
+
+}
+
+.main-background{ /*스크롤시 헤더 뒤에보이는 영역을 완전히 지우기위해 설계*/
+    border-radius: 0px 0px 50px 50px; /*왼쪽위, 오른쪽위, 왼쪽아래, 오른쪽 아래*/
+    background-color: rgba(128, 128, 128);
+}
+
+.main-header h1{ /* I'm + navigation*/
+    padding-top: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-js{
+    padding-top: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.header-ul{ /*네비게이션 ul*/
+    margin-top: 0px;
+    padding-bottom: 10px;
+    list-style: none;
+    display: flex;
+    gap: 10%;
+    right: 36px;
+    position: relative;
+    justify-content: center; /*가로 중앙 / align-items: center = 얘는 세로 중앙*/
+}
+
+.header-a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-a:hover{
+    text-decoration: underline;
+}

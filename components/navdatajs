@@ -1,0 +1,27 @@
+const navHtml = `
+        <nav>
+            <ul class="header-ul">
+            </ul>
+        </nav>
+`;
+
+const navmenu1 = [
+    {href:"#ability1", label: "cooperative"},
+    {href:"#ability2", label: "adventurous"},
+    {href:"#ability3", label: "persistent"},
+    {href:"#ability4", label: "sincere"}
+]
+
+document.addEventListener("DOMContentLoaded", () => {
+    const domParser = new DOMParser();
+    const doc = domParser.parseFromString(navHtml,"text/html");
+
+    const ulElem = doc.querySelector("ul");
+
+    const liHtmlArr = navmenu1.map(item => `<li class="header-li"><a class="header-a" href="${item.href}">${item.label}</a></li>` );
+
+    ulElem.innerHTML = liHtmlArr.join("");
+
+    const navParent = document.querySelector(".nav-js");
+    navParent.appendChild(ulElem);
+});

@@ -1,0 +1,138 @@
+body{
+    background: #ffffff;
+}
+
+.main-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.main_image img{
+    border-radius: 50%;
+}
+
+.main_image{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-login-left-image{
+    width: 150px;
+    margin-right: 50px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.main-login-left-top-image{
+    position: absolute;
+    width: 120px;
+    top: 40px;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.main-login-right-image{
+    width: 170px;
+    height: 170px;
+    margin-left: 20px;
+    margin-bottom: 90px;
+}
+.main-login-image{
+    margin-bottom: 30px;
+}
+
+
+.btn_login{
+    width: 307px;
+    height: 50px;
+    padding : 10px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: rgb(104, 104, 200);
+    border-radius: 9px ;
+    cursor:pointer;
+}
+
+.btn_register{
+    width: 307px;
+    height: 30px;
+    font-size: 15px;
+    color: gray;
+    border: none;
+    background-color: transparent;
+    cursor:pointer;
+    padding: 0;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.login-input-text input{
+    width: 300px;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 9px;
+    border: none;
+}
+
+.login-input-text{
+    margin-bottom: 15px;
+}
+
+.btn_register_chk{
+    width: 30%;
+    height: 50px;
+    padding : 10px;
+    font-size: 18px;
+    border: none;
+    color: white;
+    background-color: rgb(104, 104, 200);
+    border-radius: 9px ;
+    cursor:pointer;
+}
+
+.btn_register_chk1{
+    width: 105px;
+    height: 40px;
+    padding : 10px;
+    font-size: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(104, 104, 200);
+    border-radius: 9px ;
+    cursor:pointer;
+}
+
+.register_area{
+    margin-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+
+.register_area input{
+    margin: 10px;
+}
+
+.register_btn_area{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pw2_area{
+    margin-top: -10px;
+}

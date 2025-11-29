@@ -1,0 +1,27 @@
+.scroll-container{
+    height: 100vh;
+    overflow: scroll;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden; /*나중에 자바스크립트로 처리할 예정*/
+}
+
+.scroll-section{
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-section p{
+    position: relative;
+    z-index: 998;
+}
+
+.scroll-section footer{
+    height: 100vh;
+    width: 100%;
+}

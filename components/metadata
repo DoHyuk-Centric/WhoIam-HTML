@@ -1,0 +1,38 @@
+const metaContentHtmlString = `
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="6개월만에 연봉 1억을 찾으시나요?">
+    <meta name="keywords" content="Front-end, 국비지원, html">
+    <meta name="author" content="김도혁">
+    <meta name="Date" content="2025-11-21T15:14:30+09:00">
+    <meta http-equiv="HTML" content="Text/HTML/MAYBE REACT">
+    <meta http-equiv="Subject" content="주제는 국비지원이다">
+    <meta http-equiv="title" content="HTML 공부">
+    <meta http-equiv="publisher" content="구름_student">
+    <meta http-equiv="Other Agent" content="구름_student_김도혁">
+    <meta http-equiv="Generator" content="VScode">
+    <meta http-equiv="Reply-To" content="ehgur8527@naver.com">
+    <meta http-equiv="Email" content="ehgur8527@naver.com">
+    <meta http-equiv="Filename" content="Untitled-1.html">
+    <meta http-equiv="Location" content="위치">
+    <meta http-equiv="Distribution" content="배포자">
+    <meta http-equiv="Build" content="date">
+    <meta http-equiv="Last-Modified" content="Fri, 21 Nov 2025 15:21:40">
+
+    <!--SNS로 공유하려고 할 때 설정할 정보-->
+    <meta property="og:title" content="개발자가 되고싶어?">
+    <meta property="og:description" content="6개월후면 연봉 8천을 받는다고?">
+    <meta property="og:image" content="cookie.jpg">
+    <meta property="og:url" content="http://127.0.0.1:3002/scc-memory-matching-game-main/lib/Untitled-1.html?">
+    <meta property="og:site_name" content="구름 딥다이브"></meta>
+`;
+
+document.addEventListener("DOMContentLoaded", () => {
+    const domParser = new DOMParser();
+    const metatagHtml = domParser.parseFromString(
+        metaContentHtmlString,
+        "text/html"
+    );
+    const headElem = metatagHtml.children[0].getElementsByTagName("head")[0];
+    document.head.prepend(...Array.from(headElem.children));
+});

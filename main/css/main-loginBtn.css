@@ -1,0 +1,16 @@
+/*로그인 버튼 CSS*/
+.login_button {
+    position: absolute; /*부모 객체가 main-header*/
+    right: 40px; /*우측으로 붙이기*/
+    top: 10px; /*상단으로 붙이기*/
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-decoration-line: none;
+    color: black;
+    z-index: 1000;     /* 다른 요소 위로 */
+}
+
+.login_button:hover{
+    text-decoration-line: underline;
+}

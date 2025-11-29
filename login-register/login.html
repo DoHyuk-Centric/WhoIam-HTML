@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <!--meta 태그는 아무거나 넣어도 오류가 나진 않지만
+    아무거나 넣으면 브라우저가 이해 못하는 의미 없는 태그가 된다.-->
+<head>
+    <title>Front-end 1주차 로그인 기능 구현</title>
+    <link rel="stylesheet" href="./css/logincss.css">
+    <script src="../components/metadata" async></script>
+</head>
+
+<body>
+    <div class="main-image-container">
+        <!--이미지 파일-->
+        <div class="main_image">
+            <img class="main-login-left-image" src="./image/cookieface.webp" width="200">
+            <img class="main-login-left-top-image" src="./image/co1.webp" width="200">
+            <img class="main-login-image" src="./image/cookie.webp" width="200">
+            <img class="main-login-right-image" src="./image/co3.webp" width="200">
+        </div>
+    </div>
+    <div class="main-container">
+        <!--로그인 텍스트-->
+        <div class="login_h">
+            <h2><b>로그인</b></h2>
+        </div>
+
+        <!-- form사용 = 이후에 데이터를 제출하기 위해서 미리 도안화 -->
+        <form id="login_form"><!--form으로 이메일, 패스워드를 감쌈-->
+            
+            <!--이메일-->
+            <div class="login-input-text">
+                <input type="text" placeholder="이메일을 입력해주세요.">
+            </div>
+
+            <!--패스워드-->
+            <div class="login-input-text">
+                <input type="password" placeholder="비밀번호를 입력해주세요.">
+            </div>
+
+            <!--로그인 버튼 / 회원가입 버튼(예정)-->
+            <button onclick="login()" class="btn_login" id="btn_login">로그인</button>
+            <p><button onclick="location.href='register.html'" type="button" class="btn_register" id="btn_register">회원정보가 없으신가요?</button></p><!--버튼 타입을 button으로 지정하지 않으니 계속 새로고침만 된다.-->
+            <p><button type="button" onclick="location.href='../main/main.html'" type="button" class="btn_register" id="btn_register">홈으로가기</button></p>
+        </form>
+    </div>
+
+    <!-- 버튼 눌림 감지 -->
+    <!--
+    <script>
+        const loginButton = document.getElementById("btn_login");
+
+        loginButton.addEventListener("click", () => {
+            alert("하이");
+            }
+        );
+    </script>
+    -->
+    <script src="./js/loginjs.js"></script>
+</body>
+</html>
